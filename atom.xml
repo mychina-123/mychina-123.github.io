@@ -60,9 +60,9 @@
     <category term="实用" scheme="http://example.com/categories/%E5%AE%9E%E7%94%A8/"/>
     
     
-    <category term="实用" scheme="http://example.com/tags/%E5%AE%9E%E7%94%A8/"/>
-    
     <category term="修复" scheme="http://example.com/tags/%E4%BF%AE%E5%A4%8D/"/>
+    
+    <category term="实用" scheme="http://example.com/tags/%E5%AE%9E%E7%94%A8/"/>
     
   </entry>
   
@@ -86,9 +86,9 @@
     <category term="实用" scheme="http://example.com/categories/%E5%AE%9E%E7%94%A8/"/>
     
     
-    <category term="实用" scheme="http://example.com/tags/%E5%AE%9E%E7%94%A8/"/>
-    
     <category term="修复" scheme="http://example.com/tags/%E4%BF%AE%E5%A4%8D/"/>
+    
+    <category term="实用" scheme="http://example.com/tags/%E5%AE%9E%E7%94%A8/"/>
     
   </entry>
   
@@ -164,9 +164,9 @@
     <category term="JerBrains激活箱" scheme="http://example.com/categories/JerBrains%E6%BF%80%E6%B4%BB%E7%AE%B1/"/>
     
     
-    <category term="JerBrains激活箱" scheme="http://example.com/tags/JerBrains%E6%BF%80%E6%B4%BB%E7%AE%B1/"/>
-    
     <category term="实用" scheme="http://example.com/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+    <category term="JerBrains激活箱" scheme="http://example.com/tags/JerBrains%E6%BF%80%E6%B4%BB%E7%AE%B1/"/>
     
   </entry>
   
