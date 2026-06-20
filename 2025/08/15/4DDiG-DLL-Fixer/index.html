@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="dark" lang="zh-CN" prefix="og: http://ogp.me/ns# 
+fb: http://ogp.me/ns/fb#
+article: http://ogp.me/ns/article#">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+
+<title>4DDiG DLL Fixer || 思青衿</title>
+<link rel="icon" href="http://example.comundefined" type="image/x-icon">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<meta property="og:title" content="4DDiG DLL Fixer">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://example.com/2025/08/15/4DDiG-DLL-Fixer/index.html">
+<meta property="og:image" content="">
+<meta property="og:site_name" content="思青衿">
+<meta property="og:author" content="思青衿">
+
+  
+  
+  
+  <meta name="description" content="4DDiGDLLFixer系统运行库、DirectX、dll文件修复工具来了他可以全面检测、修复Windows电脑因为缺少系统常用运行库、DirectX以及DLL文件所导致的异常也就是用来解决双击程序应用包括游戏是频繁出现的打不开无响应甚至弹窗报错的问题具体使用也很简单初次打开默认进入的是全面扫描主要适用于以">
+
+
+<script src="/js/wang.js"></script>
+
+<link rel="stylesheet" href="/css/wang.css">
+<script> console.log("Hello hexo-theme-wang"); </script>
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="思青衿" type="application/atom+xml">
+</head>
+<body>
+<main>
+    <div id="agplAlert" style="z-index: 9999;">
+    <strong>请遵守AGPL 3.0协议</strong> 本主题已开源于<a target="_blank" rel="noopener" href="https://github.com/xingwangzhe/hexo-theme-wang">hexo-theme-wang</a>
+</div>
+    <header>
+    <nav>
+        <ul>
+            
+                <li>
+                    <a href="/" rel="noopener">
+                        
+                            <img src="/images/menu_ico/home.svg" class="menu-icon" alt="首页">
+                        
+                        首页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/archives" rel="noopener">
+                        
+                            <img src="/images/menu_ico/archives.svg" class="menu-icon" alt="归档">
+                        
+                        归档
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories" rel="noopener">
+                        
+                            <img src="/images/menu_ico/categories.svg" class="menu-icon" alt="分类">
+                        
+                        分类
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/tags" rel="noopener">
+                        
+                            <img src="/images/menu_ico/tags.svg" class="menu-icon" alt="标签">
+                        
+                        标签
+                    </a>
+                </li>
+            
+            
+                <li>
+                    <button class="search-toggle-btn" aria-label="打开搜索">
+                        <img src="/images/menu_ico/search.svg" class="menu-icon" alt="search">
+                        搜索
+                    </button>
+                </li>
+            
+        </ul>
+    </nav>
+</header>
+
+<script src="/js/header.js"></script>
+
+    
+<script src="/js/search.js"></script>
+
+
+    
+        <!-- 搜索模态框 -->
+        <div id="search-modal" class="search-modal">
+          <div class="search-modal-content">
+            <div class="search-header">
+              <form class="search-form" action="#" onsubmit="return false;">
+                <input type="text" id="search-input" placeholder="输入关键词搜索" autocomplete="off">
+                <button type="button" class="search-close-btn" aria-label="关闭">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div id="search-results"></div>
+          </div>
+        </div>
+
+        <script>
+        // 向全局对象添加i18n数据，以便search.js使用
+        window.WANG_THEME = window.WANG_THEME || {};
+        window.WANG_THEME.i18n = {
+          search: {
+            noResults: '没有找到相关结果',
+            loading: '正在加载...',
+            placeholder: '输入关键词搜索',
+            close: '关闭',
+            shortcut_tip: '按 ESC 关闭',
+            toggle_search: '打开搜索',
+            error_loading: '加载搜索数据失败'
+          }
+        };
+        </script>
+    
+    <aside class="sidebar-container sidebar-left">
+    <div class="sidebar-bg">
+        <h2 class="site-title">思青衿</h2>
+        <img class="avatar avatar-round" src="/images/avatar.webp" style="width:50px;" alt="网站头像">
+        <h2 class="site-author">思青衿</h2>
+        <h3 class="site-subtitle">——个人网站</h3>
+    </div>
+    <div class="sidebar-bg">
+        <ul class="social_links">
+            
+                <li>
+                    <a target="_blank" rel="noopener" href="https://github.com/mychina-123" aria-label="Github的链接">
+                        
+                            <div style="display: flex; margin-left: auto; margin-left: auto; justify-content: center;">
+                                <img src="/images/social_links/github.svg" class="icon" alt="Github的图标"><p>Github</p>
+                            </div>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a target="_blank" rel="noopener" href="https://space.bilibili.com/1743113293?spm_id_from=333.1007.0.0" aria-label="bilibili的链接">
+                        
+                            <div style="display: flex; margin-left: auto; margin-left: auto; justify-content: center;">
+                                <img src="/images/social_links/bilibili.svg" class="icon" alt="bilibili的图标"><p>bilibili</p>
+                            </div>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a target="_blank" rel="noopener" href="https://outlook.live.com/mail" aria-label="Email的链接">
+                        
+                            <div style="display: flex; margin-left: auto; margin-left: auto; justify-content: center;">
+                                <img src="/images/social_links/Email.svg" class="icon" alt="Email的图标"><p>Email</p>
+                            </div>
+                        
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</aside>
+<div class="post-container">
+  <article class="post">
+    <h1 class="post-title">4DDiG DLL Fixer</h1>
+
+    <div class="post-meta">
+      <span class="post-date">发布于 <time datetime="2025-08-15T08:08:49.000Z">2025-08-15</time></span>
+      
+        <span class="post-categories">
+          分类：<a class="category-link" href="/categories/%E5%AE%9E%E7%94%A8/">实用</a>
+        </span>
+      
+      
+        <span class="post-updated">
+          最后更新于 <time datetime="2025-08-15T09:51:23.260Z">2025-08-15</time>
+        </span>
+      
+      <span style="margin-left:10px;">👁<span id="busuanzi_value_page_pv"></span></span>
+    </div>
+    <div class="post-content">
+      <h1 id="4DDiG-DLL-Fixer"><a href="#4DDiG-DLL-Fixer" class="headerlink" title="4DDiG DLL Fixer"></a>4DDiG DLL Fixer</h1><p>系统运行库、DirectX、dll文件修复工具来了<br>他可以全面检测、修复Windows电脑<br>因为缺少系统常用运行库、DirectX<br>以及DLL文件所导致的异常<br>也就是用来解决双击程序应用<br>包括游戏是频繁出现的打不开无响应<br>甚至弹窗报错的问题</p>
+<h3 id="具体使用也很简单"><a href="#具体使用也很简单" class="headerlink" title="具体使用也很简单"></a>具体使用也很简单</h3><p>初次打开默认进入的是全面扫描<br>主要适用于以下6中情况<br>分别是  DLL文件丢失 、 运行库异常 、 DirectX异常 、 电脑错误提示 、 软件无法打开 、 游戏运行失败等<br>只需点击右上角按钮，便会自动对当前电脑进行检测<br>与此同时，也可以通过左侧列表进行单项检测<br>整个检测过程也是相当的快<br>如果遇到确实待修复的情况<br>只需点击右上角修复按钮<br>然后耐心等待即可<br>完成之后，再去双击运行那些原本打不开的程序、应用和游戏<br>便能发现都可以正常运行了</p>
+<h3 id="此工具需要激活，因此我提供了激活的网站"><a href="#此工具需要激活，因此我提供了激活的网站" class="headerlink" title="此工具需要激活，因此我提供了激活的网站"></a>此工具需要激活，因此我提供了激活的网站</h3><h2 id="有些错误不用管它，当你手动下载时，他会提示你“已安装其他版本”"><a href="#有些错误不用管它，当你手动下载时，他会提示你“已安装其他版本”" class="headerlink" title="有些错误不用管它，当你手动下载时，他会提示你“已安装其他版本”"></a>有些错误不用管它，当你手动下载时，他会提示你“已安装其他版本”</h2>
+    </div>
+  </article>
+  <div class="ccbyncsa">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright">
+                    <div class="author">
+                        <p>作者</p>
+                        <p>思青衿</p>
+                    </div>
+                    <div class="title">
+                        <p>标题</p>
+                        <p>4DDiG DLL Fixer</p>
+                    </div>
+                        <div class="publish">
+                            <p>发布于</p>
+                            <p>2025-08-15</p>
+                        </div>
+                    <div class="ccbyncsa-icon">
+                        <p>授权协议</p>
+                        <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p class="ccbyncsa-icon-imgs" style="display: flex;">
+                        <img src="/images/cc.svg" alt="cc">
+                        <img src="/images/by.svg" alt="by">
+                        <img src="/images/nc.svg" alt="nc">
+                        <img src="/images/sa.svg" alt="sa">
+                        </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <nav class="post-pagination">
+    
+      <div class="post-prev">
+        <span class="nav-label">上一篇</span>
+        <a href="/2025/08/14/%E5%85%A8%E8%83%BD%E4%BF%AE%E5%A4%8D%E5%A4%A7%E5%B8%88/">全能修复大师</a>
+      </div>
+    
+    
+      <div class="post-next">
+        <span class="nav-label">下一篇</span>
+        <a href="/2026/05/31/%E8%A7%A3%E9%99%A4%E6%9E%81%E6%9D%83%E9%99%90%E5%88%B6/">解除极权限制</a>
+      </div>
+    
+  </nav>
+  
+<link href="https://unpkg.com/@waline/client@v3/dist/waline.css" rel="stylesheet">
+<div class="comments-container night">
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+      init({
+        el: '#waline',
+        serverURL: '',
+        dark: 'html.dark',
+        pageview: true,
+        commentClassName: 'prose prose-neutral dark:prose-invert min-w-0 max-w-none',
+        lang: 'zh-CN', //
+        avatar: 'mm', //
+        meta: ['nick', 'mail'], //
+        pageSize: 10, //
+        visitor: true, //
+        commentCount: true, //
+        requiredFields: ['nick', 'mail'], //
+      });
+    </script>
+    </div>
+
+
+</div>
+
+<script src="/js/copy.js"></script>
+
+<aside class="sidebar-container sidebar-right">
+    <div class="sidebar-bg">
+        <p id="date"></p>
+<script>
+  function updateDate() {
+    var now = new Date();
+    var dateString = now.toISOString().slice(0, 10);
+    document.getElementById('date').textContent = dateString;
+  }
+
+  window.addEventListener('load', function() {
+    updateDate();
+    // 更新频率为每5分钟更新一次，减少不必要的更新
+    setInterval(updateDate, 300000);
+  });
+</script>
+        <span id="clock" role="timer" aria-live="polite"></span>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const clockElement = document.getElementById('clock');
+    let timerInterval;
+
+    // 格式化时间函数
+    function formatTime(unit) {
+      return unit < 10 ? '0' + unit : unit;
+    }
+
+    // 更新时钟 - 包含秒
+    function updateClock() {
+      const now = new Date();
+      const hours = formatTime(now.getHours());
+      const minutes = formatTime(now.getMinutes());
+      const seconds = formatTime(now.getSeconds());
+      clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    // 初始化时钟
+    function startClock() {
+      // 立即更新一次时间
+      updateClock();
+      // 每秒更新一次
+      timerInterval = setInterval(updateClock, 1000);
+    }
+
+    // 页面可见性变化时的优化
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        // 页面不可见时停止更新
+        clearInterval(timerInterval);
+      } else {
+        // 页面重新可见时，重新开始
+        clearInterval(timerInterval);
+        startClock();
+      }
+    });
+
+    // 启动时钟
+    startClock();
+  });
+</script>
+
+
+    </div>
+    <div class="sidebar-bg">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#4DDiG-DLL-Fixer"><span class="toc-number">1.</span> <span class="toc-text">4DDiG DLL Fixer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E4%BD%BF%E7%94%A8%E4%B9%9F%E5%BE%88%E7%AE%80%E5%8D%95"><span class="toc-number">1.0.1.</span> <span class="toc-text">具体使用也很简单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A4%E5%B7%A5%E5%85%B7%E9%9C%80%E8%A6%81%E6%BF%80%E6%B4%BB%EF%BC%8C%E5%9B%A0%E6%AD%A4%E6%88%91%E6%8F%90%E4%BE%9B%E4%BA%86%E6%BF%80%E6%B4%BB%E7%9A%84%E7%BD%91%E7%AB%99"><span class="toc-number">1.0.2.</span> <span class="toc-text">此工具需要激活，因此我提供了激活的网站</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E4%BA%9B%E9%94%99%E8%AF%AF%E4%B8%8D%E7%94%A8%E7%AE%A1%E5%AE%83%EF%BC%8C%E5%BD%93%E4%BD%A0%E6%89%8B%E5%8A%A8%E4%B8%8B%E8%BD%BD%E6%97%B6%EF%BC%8C%E4%BB%96%E4%BC%9A%E6%8F%90%E7%A4%BA%E4%BD%A0%E2%80%9C%E5%B7%B2%E5%AE%89%E8%A3%85%E5%85%B6%E4%BB%96%E7%89%88%E6%9C%AC%E2%80%9D"><span class="toc-number">1.1.</span> <span class="toc-text">有些错误不用管它，当你手动下载时，他会提示你“已安装其他版本”</span></a></li></ol></li></ol>
+    </div>
+    <div class="sidebar-bg">
+        <div class="card-tags">
+            
+                <a href="/tags/%E4%BF%AE%E5%A4%8D/" class="tag" aria-label="标签: #修复">#修复</a>
+            
+                <a href="/tags/%E5%AE%9E%E7%94%A8/" class="tag" aria-label="标签: #实用">#实用</a>
+            
+        </div>
+    </div>
+    <div>
+        <div class="categories-list">
+            
+                <div class="category-item">
+                    <a href="/categories/%E5%AE%9E%E7%94%A8/" aria-label="分类: 实用">
+                        实用
+                        <span>(3)</span>
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+</aside>
+
+    <!-- No categories available -->
+
+
+    <footer>
+    <span id="busuanzi_container_site_pv" style="display: inline;"></span>
+    <span>👁<span id="busuanzi_value_site_pv"></span></span>
+    <div class="padding border border-sub border-dotted fadein-right">
+        <span style="color:aliceblue">👤<span id="busuanzi_value_site_uv"></span></span>
+    </div>
+    <span>
+        由 <a target="_blank" rel="noopener" href="https://hexo.io" alt="Hexo">
+            <p class="hover-underline night" style="display: inline;">Hexo</p>
+        </a> 驱动
+        <p style="display: inline; color: red;">❤</p>
+        <a target="_blank" rel="noopener" href="https://github.com/xingwangzhe/hexo-theme-wang" alt="Wang">
+            <p class="hover-underline night" style="display: inline;">Wang</p>
+        </a> 主题构建
+    </span>
+
+    <!-- 带图片的链接 -->
+    <div class="footer-links">
+        
+    </div>
+
+    <!-- 纯文本链接 -->
+    <div class="footer-text-links">
+        
+            
+                <a href="" target="_blank" rel="noopener">
+                    
+                </a>
+            
+        
+    </div>
+</footer>    
+<script src="/js/background.js"></script>
+    
+        
+<script src="/js/search.js"></script>
+    
+</main>
+</body>
+</html>
